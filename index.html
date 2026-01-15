@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NaturoBD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Top bar -->
+    <div class="top-bar text-white bg-dark py-2 small">
+      <div class="container d-flex justify-content-between">
+        <div>📞 09639812525</div>
+        <div>Discover the Power of Nature with NaturoBD</div>
+        <div>Customer Help</div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark main-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">NATURO</a>
+        <form class="d-flex flex-grow-1 mx-3">
+          <input
+            class="form-control search-input"
+            type="search"
+            placeholder="Search in Naturo..."
+          />
+        </form>
+        <div class="text-white">
+          🛒 Cart <span class="badge bg-danger">0</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel">
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+        </div>
+
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Web Slider 01_KMGsqf98.webp"
+                class="d-block w-100"
+                alt="Slide 1"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Web%20Slider%2002_KMG5yaqx6.webp"
+                class="d-block w-100"
+                alt="Slide 2"
+              />
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Category Marquee -->
+<section class="category-marquee py-4">
+  <div class="container-fluid overflow-hidden">
+    <div class="category-track d-flex align-items-center">
+
+      <div class="category-card">
+        <div class="icon-circle">🍯</div>
+        <span>Honey</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">🥜</div>
+        <span>Nuts</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">🛢</div>
+        <span>Oil</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">🧈</div>
+        <span>Ghee</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">🌿</div>
+        <span>Herbs</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">⭐</div>
+        <span>Popular</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">💪</div>
+        <span>Super Food</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">🧘</div>
+        <span>Wellness</span>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-circle">🛍</div>
+        <span>All</span>
+      </div>
+
+      <!-- duplicate for seamless loop -->
+      <div class="category-card">
+        <div class="icon-circle">🍯</div>
+        <span>Honey</span>
+      </div>
+      <div class="category-card">
+        <div class="icon-circle">🥜</div>
+        <span>Nuts</span>
+      </div>
+      <div class="category-card">
+        <div class="icon-circle">🛢</div>
+        <span>Oil</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container my-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+      
+      <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- product cart -->
+      <div class="col">
+        <div class="card product-card h-100 text-center">
+
+          <!-- Image -->
+          <div class="product-img-wrapper">
+            <img src="https://pub-b80211003304448e8a7f0edc480f0608.r2.dev/Thai%20China%20Badam%20B_KMGl48tv.webp"
+                 class="product-img"
+                 alt="Peepal Powder">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions d-flex">
+            <button class="action-btn border-end">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body">
+            <h6 class="mb-1">কাঠ বাদাম | Almond</h6>
+            <span class="price">৳1,600</span>
+            <del class="old-price">৳1,750</del>
+        </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+<footer class="naturo-footer pt-5">
+    <div class="container">
+        <div class="row gy-4">
+
+            <!-- Brand & Contact -->
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/180x50?text=NATURO" class="mb-3" alt="Naturo">
+                <h6 class="fw-bold text-success mb-3">BACK TO NATURE</h6>
+
+                <p class="mb-2">
+                    <i class="bi bi-telephone me-2"></i>
+                    Hotline 24/7:<br>
+                    <strong class="fs-5">09639812525</strong>
+                </p>
+
+                <p class="mb-2">
+                    <i class="bi bi-geo-alt me-2"></i>
+                    Level-5, Noor Tower, 110 Bir Uttam CR Dutta Rd, Dhaka 1205
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope me-2"></i>
+                    naturo@gmail.com
+                </p>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-md-2">
+                <h6 class="footer-title">Useful Links</h6>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Help Center -->
+            <div class="col-md-2">
+                <h6 class="footer-title">Help Center</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">How to Order</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4">
+                <h6 class="footer-title">Naturo Social Media</h6>
+                <p>Follow us on social media to stay updated with our latest offers.</p>
+
+                <div class="social-icons mt-3">
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="text-center pb-3">
+            © 2026 Naturo. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
